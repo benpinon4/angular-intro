@@ -1,12 +1,11 @@
 import {Component} from '@angular/core';
+import { HelloWorld } from './components/HelloWorld/hello-world';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  template: `
-  <h1>Hello world!</h1>
-  `,
-  styleUrls: ['./app.component.css'],
+  imports: [HelloWorld],
+  template: `<hello-world />
+  <p>Hello</p>  `
 })
 export class AppComponent {
   title = 'homes';
